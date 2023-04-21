@@ -1,35 +1,24 @@
-window.onbeforeunload = function () {
+// Que la pagina vuelva al inicio cuando se reinicia
+
+window.onload = function() {
   window.scrollTo(0, 0);
+};
+
+// Inicializar el Mapa 
+
+function iniciarMap(){
+  var coord = {lat:-34.5956145 ,lng: -58.4431949};
+  var map = new google.maps.Map(document.getElementById('map'),{
+    zoom: 10,
+    center: coord
+  });
+  var marker = new google.maps.Marker({
+    position: coord,
+    map: map
+  });
 }
 
-// Obtener los botones
-const blackButton = document.getElementById('black-button');
-const whiteButton = document.getElementById('white-button');
 
-// Agregar evento de clic a cada botón
-blackButton.addEventListener('click', () => {
-  // Si el botón negro ya está seleccionado, quitar la selección
-  if (blackButton.classList.contains('selected')) {
-    blackButton.classList.remove('selected');
-  } else {
-    // Deseleccionar el botón blanco
-    whiteButton.classList.remove('selected');
-    // Seleccionar el botón negro
-    blackButton.classList.add('selected');
-  }
-});
-
-whiteButton.addEventListener('click', () => {
-  // Si el botón blanco ya está seleccionado, quitar la selección
-  if (whiteButton.classList.contains('selected')) {
-    whiteButton.classList.remove('selected');
-  } else {
-    // Deseleccionar el botón negro
-    blackButton.classList.remove('selected');
-    // Seleccionar el botón blanco
-    whiteButton.classList.add('selected');
-  }
-});
 
 
 
