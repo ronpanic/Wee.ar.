@@ -34,6 +34,7 @@
   font-size: 16px;
   font-weight: 800;
   background-color: #24252a;
+  border: none;
 }
 .button-wear button:hover {
   transition: all 0.5s ease-out;
@@ -63,17 +64,36 @@
   transition-delay: 0.2s;
 }
 .list-wear img {
-  width: 100%;
+  width: 80%;
+  border-radius: 5px;
+  opacity: 0.8;
 }
 .list-wear .list-container {
   text-align: center;
 }
 .list-wear .list-container h2 {
-  font-size: 15px;
+  font-size: 12px;
+  text-align: center;
 }
-.list-wear .list-container p {
-  font-size: 14px;
+.list-wear h3 {
+  font-size: 20px;
   color: #adada1;
+}
+.list-wear h2 {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-size: 25px;
+}
+.list-wear .info-wear {
+  margin-top: 1rem;
+  display: flex;
+  gap: 14.5rem;
+}
+.list-wear .info-wear button {
+  color: #fff;
+  background-color: #24252a;
+  border-radius: 5px;
+  border: none;
 }
 
 .more-wear {
@@ -85,22 +105,7 @@
   background-color: #24252a;
   border-radius: 10px;
   color: antiquewhite;
-}
-
-.price {
-  display: flex;
-}
-.price button {
-  margin-left: 20rem;
-  background-color: #24252a;
-  border-radius: 10px;
-  color: antiquewhite;
-  font-size: 15px;
-  padding: 5px 20px;
-}
-
-.list-container {
-  display: flex;
+  border: none;
 }
 
 /*# sourceMappingURL=productpage.css.map */

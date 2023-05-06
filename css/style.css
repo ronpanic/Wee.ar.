@@ -207,6 +207,7 @@ footer img {
   font-size: 16px;
   font-weight: 800;
   background-color: #24252a;
+  border: none;
 }
 .button-wear button:hover {
   transition: all 0.5s ease-out;
@@ -236,17 +237,36 @@ footer img {
   transition-delay: 0.2s;
 }
 .list-wear img {
-  width: 100%;
+  width: 80%;
+  border-radius: 5px;
+  opacity: 0.8;
 }
 .list-wear .list-container {
   text-align: center;
 }
 .list-wear .list-container h2 {
-  font-size: 15px;
+  font-size: 12px;
+  text-align: center;
 }
-.list-wear .list-container p {
-  font-size: 14px;
+.list-wear h3 {
+  font-size: 20px;
   color: #adada1;
+}
+.list-wear h2 {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-size: 25px;
+}
+.list-wear .info-wear {
+  margin-top: 1rem;
+  display: flex;
+  gap: 14.5rem;
+}
+.list-wear .info-wear button {
+  color: #fff;
+  background-color: #24252a;
+  border-radius: 5px;
+  border: none;
 }
 
 .more-wear {
@@ -258,22 +278,7 @@ footer img {
   background-color: #24252a;
   border-radius: 10px;
   color: antiquewhite;
-}
-
-.price {
-  display: flex;
-}
-.price button {
-  margin-left: 20rem;
-  background-color: #24252a;
-  border-radius: 10px;
-  color: antiquewhite;
-  font-size: 15px;
-  padding: 5px 20px;
-}
-
-.list-container {
-  display: flex;
+  border: none;
 }
 
 /* Us Page */
@@ -369,7 +374,7 @@ footer img {
   text-align: center;
   margin-top: 2rem;
   margin-left: 1.2rem;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .email form {
   display: flex;
@@ -671,6 +676,7 @@ body {
   font-family: "Kanit", sans-serif;
   margin: 0;
   color: #fff;
+  overflow-x: hidden;
 }
 
 a {
@@ -758,15 +764,19 @@ ul li a button {
 
 .wear p {
   margin-top: -2rem;
+  margin-left: 1rem;
   max-width: 25rem;
   color: #adada1;
 }
 
 .wear button {
+  margin-left: 1rem;
   width: 7rem;
   height: 2.2rem;
   border-radius: 5px;
   background-color: #2e4f4f;
+  border: none;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -828,6 +838,65 @@ ul li a button {
     font-size: 12px;
   }
 }
+.outfit-idea .outfit-text {
+  margin-top: -50rem;
+  margin-bottom: 20rem;
+  margin-left: 60rem;
+}
+.outfit-idea .outfit-text p {
+  color: #adada1;
+}
+.outfit-idea .outfit-text button {
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+  background-color: #24252a;
+}
+.outfit-idea .outfit-text button:hover {
+  background-color: #2e4f4f;
+}
+.outfit-idea .outfit1 img {
+  border-radius: 10px;
+  width: 20%;
+  margin-left: 10rem;
+  margin-top: -70rem;
+}
+
+.info-container1 {
+  display: flex;
+}
+
+.more-info,
+.more-info2 {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  position: relative;
+}
+.more-info img,
+.more-info2 img {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 4rem;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.more-info p,
+.more-info2 p {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  opacity: 1;
+  user-select: none;
+}
+
 @media screen and (max-width: 768px) {
   .nav-wear {
     display: none;
@@ -890,6 +959,45 @@ ul li a button {
     height: 300px;
   }
   .acordion {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .bk-outfit img {
+    margin-top: -15rem;
+    width: 1000px;
+  }
+  .outfit-idea {
+    margin-top: 30rem;
+  }
+  .outfit-text h1 {
+    font-size: 20px;
+    margin-left: -55rem;
+  }
+  .outfit-text p {
+    font-size: 18px;
+    margin-left: -55rem;
+  }
+  .outfit-text button {
+    margin-left: -55rem;
+  }
+  .outfit1 {
+    display: none;
+  }
+  .more-info {
+    margin-left: -56rem;
+    margin-right: -10rem;
+  }
+  .more-info img {
+    width: 50%;
+  }
+  .more-info a p {
+    display: none;
+  }
+  .more-info2 img {
+    width: 50%;
+  }
+  .more-info2 a p {
     display: none;
   }
 }
