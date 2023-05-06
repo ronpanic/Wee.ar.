@@ -207,7 +207,6 @@ footer img {
   font-size: 16px;
   font-weight: 800;
   background-color: #24252a;
-  cursor: pointer;
 }
 .button-wear button:hover {
   transition: all 0.5s ease-out;
@@ -246,7 +245,6 @@ footer img {
   font-size: 15px;
 }
 .list-wear .list-container p {
-  margin-top: 0.1rem;
   font-size: 14px;
   color: #adada1;
 }
@@ -271,7 +269,6 @@ footer img {
   border-radius: 10px;
   color: antiquewhite;
   font-size: 15px;
-  font-weight: 800;
   padding: 5px 20px;
 }
 
@@ -298,14 +295,10 @@ footer img {
   color: #adada1;
 }
 
-.about-text {
-  margin-top: 3rem;
-}
-
 #map {
   height: 57.5rem;
   width: 50%;
-  margin-top: -41.8rem;
+  margin-top: -57.8rem;
 }
 
 /* Contact Page */
