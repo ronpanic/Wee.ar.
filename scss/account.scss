@@ -1,0 +1,84 @@
+/* Account Page */
+
+.body-account {
+    background-image: url(images/accountback.png);
+  }
+  
+  .background1 {
+    background-color: #191b26;
+    position: absolute;
+    width: 58%;
+    height: 65%;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .account {
+    h1 {
+      font-size: 20px;
+      margin-top: 2rem;
+      margin-left: 2rem;
+    }
+    
+    &-button {
+      text-align: center;
+    }
+  }
+  
+  .first {
+    background-color: #24252a;
+    padding: 10px;
+    border-radius: 5px;
+    
+    &:hover {
+      background-color: rgba(173, 173, 161, 0.2);
+    }
+  }
+  
+  .go-home {
+    text-align: center;
+    margin-bottom: 1.4rem;
+    
+    button {
+      text-decoration: underline;
+      color: rgb(115, 115, 175);
+      background-color: transparent;
+      border: none;
+      
+      &:hover {
+        color: #4087da;
+      }
+    }
+  }
+  
+  .options-account {
+    margin-top: 10rem;
+  }
+  
+  .security {
+    h4 {
+      font-size: 20px;
+      margin-bottom: 5rem;
+      margin-left: 2rem;
+    }
+    
+    a:hover i {
+      color: rgb(115, 115, 175);
+    }
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    background-color: #252e38;
+    color: #fff;
+    
+    &#validationCustom04,
+    &#inputGroupPrepend {
+      background-color: #252e38;
+      color: #fff;
+    }
+  }
+  

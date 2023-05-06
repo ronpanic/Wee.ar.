@@ -1,0 +1,172 @@
+.propuestas {
+  background-image: url('../images/our\ \(2\).svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  p {
+    color: #adada1;
+    max-width: 30rem;
+    margin: 10rem auto;
+    text-align: center;
+  }
+}
+
+.text-home {
+  display: flex;
+}
+
+$text-color: #24252a;
+
+.text-product {
+  text-align: center;
+  margin-top: 15rem;
+
+  h3 {
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+    margin-left: 5rem; /* Añade el margin-left aquí */
+    
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      width: 120px;
+      height: 2px;
+      background-color: $text-color;
+      top: 0.9rem;
+    }
+    
+    &::before {
+      left: -140px;
+    }
+    
+    &::after {
+      right: -140px;
+    }
+  }
+}
+
+
+$shadow-color: rgba(0, 0, 0, 0.2);
+$overlay-color: rgba(0, 0, 0, 0.5);
+
+.show-product {
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10rem;
+}
+
+.box {
+  width: 300px;
+  box-shadow: 2px 2px 30px $shadow-color;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 25px;
+
+  .slide-img {
+    height: 450px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      box-sizing: border-box;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      background-color: $overlay-color;
+    }
+
+    &:hover .overlay {
+      opacity: 1;
+    }
+  }
+
+  .detail-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    a {
+    color: #adada1;
+    margin: 5px 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-right: 8px;
+    }
+    
+    span {
+    color: #3b3e47;
+    }
+    }
+    
+    .text span {
+    color: #adada1;
+    }
+    
+    .price {
+    color: #adada1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    }
+    
+    .buy-btn {
+    width: 160px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+    
+    .slide-img:hover .buy-btn {
+    opacity: 1;
+    }

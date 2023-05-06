@@ -1,0 +1,18 @@
+/* Footer */
+footer {
+  background-color: #1e2834;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer h5 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+}
+footer img {
+  width: 30px;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=footer.css.map */

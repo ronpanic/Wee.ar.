@@ -1,0 +1,133 @@
+/* Contact Page */
+
+.nav-contact {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    margin: 0;
+  }
+  
+  .foot-contact {
+    background-color: #1e2834;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 17rem;
+  
+    h5 {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    img {
+      width: 30px;
+      margin: 10px;
+    }
+  }
+  
+  .email-container {
+    display: flex;
+    margin-top: 15rem;
+    margin-left: 20rem;
+    font-family: "Work Sans", sans-serif;
+  }
+  
+  .text-contact {
+    margin-left: 12rem;
+    text-align: center;
+  
+    .text-1 {
+      font-size: 4rem;
+      max-width: 40rem;
+      margin-top: auto;
+      margin-bottom: 0;
+      color: #fff;
+      text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.637);
+    }
+  
+    .sub-text {
+      margin-top: 1.5rem;
+      margin-bottom: auto;
+      font-size: 1.2rem;
+      color: #adada1;
+    }
+  
+    img {
+      margin-top: 1rem;
+      width: 35px;
+      filter: invert(1);
+      margin-left: 3rem;
+    }
+  }
+  
+  .email {
+    background-color: #1e2834;
+    border-radius: 10px;
+    width: 35rem;
+    box-shadow: -5px 5px 20px rgba(255, 255, 255, 0.274);
+    height: 600px;
+    margin-top: -5rem;
+  
+    .send {
+      text-align: center;
+      margin-top: 2rem;
+      margin-left: 1.2rem;
+      font-size: 2rem;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      margin-top: 2rem;
+      text-align: center;
+  
+      label, input, textarea {
+        display: block;
+        margin-bottom: 20px;
+      }
+  
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        border: 2px solid transparent;
+        border-radius: 10px;
+        padding: 12px;
+        width: 100%;
+        background-color: #252e38;
+        box-sizing: border-box;
+        max-width: 85%;
+        color: #fff;
+  
+        &:hover {
+          border: 2px solid #CEC2FB;
+        }
+      }
+  
+      textarea {
+        resize: none;
+        height: 100px;
+      }
+  
+      .send1 {
+        color: #ffffff;
+        background-color: #24252a;
+        border-radius: 15px;
+        border-color: transparent;
+        width: 10rem;
+        height: 60px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #2B3A67;
+        }
+  
+        &:active {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
+  }
+  

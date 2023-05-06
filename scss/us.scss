@@ -1,0 +1,33 @@
+/* Us Page */
+
+.nav-us {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+.about-us {
+  h1 {
+    font-size: 4rem;
+    margin-top: 2rem;
+    margin-left: 20rem;
+  }
+
+  p {
+    max-width: 40rem;
+    margin-left: 10rem;
+    color: #adada1;
+  }
+}
+   
+.about-text {
+   margin-top: 3rem ;
+}
+  
+#map {
+  height: 57.5rem;
+  width: 50%;
+  margin-top: -41.8rem;
+}
+  

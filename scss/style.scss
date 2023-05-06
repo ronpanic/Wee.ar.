@@ -1,0 +1,305 @@
+@use 'main.scss' as main;
+@use 'footer.scss' as footer;
+@use 'productpage.scss' as productpage;
+@use 'us.scss' as us;
+@use 'contact.scss' as contact;
+@use 'account.scss' as account;
+@use 'productinfo.scss' as productinfo;
+
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+body {
+  background-color: #101116;
+  font-family: "Kanit", sans-serif;
+  margin: 0;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+
+.header-home {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(../images/forest.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3.5rem;
+  z-index: 999;
+}
+
+
+
+.logo-home {
+  margin-left: 5rem;
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin-right: 10rem;
+}
+
+li {
+  margin-right: 20px;
+}
+
+.nav-icons {
+  position: absolute;
+  right: 60px;
+}
+
+.nav-icons img {
+  width: 30px;
+  filter: invert(1);
+}
+
+.nav-icons a {
+  margin-left: 20px;
+}
+
+ul li a button {
+  font-size: 16px;
+}
+
+.navbar {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: rgb(16, 17, 22, 0.4);
+
+  .navbar-brand {
+    margin-left: 2rem;
+    color: #fff;
+  }
+
+  li {
+    a{
+      color: #fff;
+    }
+  }
+
+}
+
+.wear {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 968px;
+  margin-top: -4rem;
+  margin-left: 20rem;
+}
+
+.wear h1 {
+  font-size: 8rem;
+}
+
+.wear p {
+  margin-top: -2rem;
+  max-width: 25rem;
+  color: #adada1;
+}
+
+.wear button {
+  width: 7rem;
+  height: 2.2rem;
+  border-radius: 5px;
+  background-color: #2e4f4f;
+}
+
+
+
+// Responsive Home
+ 
+@media screen and (max-width: 768px) {
+  .nav-home {
+  display: none;
+  }
+
+  .wear {
+  align-items: center;
+  margin-left: 0;
+  h1 {
+  text-align: center;
+  }
+  }
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .nav-icons {
+      display: none;
+    }
+  
+    .wear {
+          align-items: center;
+          margin-top: -10rem;
+          margin-bottom: 4rem;
+          margin-left: 0;
+        
+          h1 {
+          text-align: center;
+          font-size: 7rem;
+        }
+  
+        p {
+          margin-top: 1px;
+          text-align: center;
+        }
+  
+        button {
+          margin-left: 9rem;
+        }
+    }
+  
+    .text-home {
+        p {
+            margin-top: 1rem;
+            margin-bottom: 5rem;
+            width: 90%;
+        }
+        
+        
+        flex-direction: column;
+    }
+  
+    .item-a,
+    .item-b,
+    .item-d {
+    display: none;
+    }
+
+    .item-c {
+      margin-top: 5rem;
+      margin-left: 10rem;
+    }
+  
+    .text-product {
+        h3 {
+          margin-right: 5rem;
+          font-size: 15px;
+          max-width: 12rem;
+      }
+    }
+
+    footer {
+      h5 {
+        font-size: 12px;
+      }
+    }
+
+
+  }
+  
+
+  // Responsive Product
+
+@media screen and (max-width: 768px) {
+  .nav-wear {
+  display: none;
+  }
+
+  .list-container {
+  display: block;
+  .list-wear {
+  width: 30rem;
+  }
+  }
+  }
+
+  @media screen and (max-width: 500px) {
+  .list-container {
+  .list-wear {
+    margin-left: 3rem;
+    width: 25rem;
+  }
+  }
+  }
+
+  // Responsive Product Info
+
+  @media screen and (max-width: 768px) {
+  .product-container1 {
+  width: 85%;
+  display: block;
+  img {
+  margin-left: -8px;
+  }
+  }
+  }
+
+  // Responsive Brand
+
+@media screen and (max-width: 768px) {
+  .about-us {
+  text-align: center;
+  h1 {
+  margin: 4rem 0 4rem;
+  }
+  p {
+  margin: 0 4rem 4rem;
+  }
+  }
+  }
+
+  // Responsive contact
+
+  @media screen and (max-width: 768px) {
+  .email {
+  display: none;
+  }
+
+  .email-container {
+  margin: 0;
+  }
+
+  .text-contact {
+  margin: 0;
+  .text-1 {
+  margin: 4.5rem;
+  margin-top: 10rem;
+  }
+  }
+  }
+
+  @media screen and (max-width: 500px) {
+  .text-contact {
+  .text-1 {
+  font-size: 3rem;
+  }
+  }
+
+  #map {
+    margin-top: 1rem;
+    width: 50rem;
+    height: 300px;
+  }
+
+
+  .acordion {
+    display: none;
+  }
+  
+  
+
+
+  }
