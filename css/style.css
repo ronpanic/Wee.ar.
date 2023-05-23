@@ -217,6 +217,7 @@ footer img {
 .list-container {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .list-wear {
@@ -251,6 +252,7 @@ footer img {
 .list-wear h3 {
   font-size: 20px;
   color: #adada1;
+  margin-left: 3rem;
 }
 .list-wear h2 {
   margin-top: 1rem;
@@ -502,6 +504,10 @@ input[type=password]#inputGroupPrepend {
   color: #fff;
 }
 
+.phone-account {
+  display: none;
+}
+
 /* Product Info Page */
 .product-container1 {
   display: flex;
@@ -676,7 +682,6 @@ body {
   font-family: "Kanit", sans-serif;
   margin: 0;
   color: #fff;
-  overflow-x: hidden;
 }
 
 a {
@@ -780,15 +785,61 @@ ul li a button {
 }
 
 @media screen and (max-width: 768px) {
-  .nav-home {
-    display: none;
-  }
   .wear {
     align-items: center;
     margin-left: 0;
   }
   .wear h1 {
     text-align: center;
+  }
+  .text-home {
+    display: block;
+  }
+  .item-a,
+  .item-b,
+  .item-d {
+    display: none;
+  }
+  .item-c {
+    margin-top: 5rem;
+    margin-left: 10rem;
+  }
+  .text-product h3 {
+    margin-right: 5rem;
+    font-size: 20px;
+    max-width: 20rem;
+  }
+  .outfit-idea .outfit1 {
+    margin-top: 25rem;
+    margin-left: -5rem;
+  }
+  .info-container1 p {
+    display: none;
+  }
+  .more-info {
+    margin-left: -40rem;
+    width: 10%;
+  }
+  .more-info img {
+    max-width: 60%;
+  }
+  .more-info2 img {
+    max-width: 60%;
+  }
+  .outfit-text {
+    margin-right: -40rem;
+  }
+  .outfit-text h1 {
+    margin-left: -40rem;
+    font-size: 1.5rem;
+  }
+  .outfit-text p {
+    margin-left: -40rem;
+    font-size: 1.5rem;
+  }
+  .outfit-text button {
+    margin-left: -40rem;
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 500px) {
@@ -836,6 +887,9 @@ ul li a button {
   }
   footer h5 {
     font-size: 12px;
+  }
+  .info-container1 .more-info {
+    display: none;
   }
 }
 .outfit-idea .outfit-text {
@@ -898,14 +952,15 @@ ul li a button {
 }
 
 @media screen and (max-width: 768px) {
-  .nav-wear {
-    display: none;
-  }
   .list-container {
     display: block;
   }
   .list-container .list-wear {
     width: 30rem;
+    margin-left: 8.5rem;
+  }
+  .list-container .list-wear button {
+    margin-left: -5rem;
   }
 }
 @media screen and (max-width: 500px) {
@@ -924,6 +979,10 @@ ul li a button {
   }
 }
 @media screen and (max-width: 768px) {
+  .acordion {
+    margin-top: -5rem;
+    margin-right: 15rem;
+  }
   .about-us {
     text-align: center;
   }
@@ -932,6 +991,9 @@ ul li a button {
   }
   .about-us p {
     margin: 0 4rem 4rem;
+  }
+  #map {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -954,6 +1016,7 @@ ul li a button {
     font-size: 3rem;
   }
   #map {
+    display: block;
     margin-top: 1rem;
     width: 50rem;
     height: 300px;
@@ -964,18 +1027,19 @@ ul li a button {
 }
 @media screen and (max-width: 500px) {
   .bk-outfit img {
-    margin-top: -15rem;
     width: 1000px;
   }
   .outfit-idea {
-    margin-top: 30rem;
+    margin-top: 15rem;
   }
   .outfit-text h1 {
     font-size: 20px;
+    max-width: 25rem;
     margin-left: -55rem;
   }
   .outfit-text p {
     font-size: 18px;
+    max-width: 10rem;
     margin-left: -55rem;
   }
   .outfit-text button {
@@ -1000,6 +1064,66 @@ ul li a button {
   .more-info2 a p {
     display: none;
   }
+}
+@media screen and (max-width: 500px) {
+  .col-6 {
+    display: none;
+  }
+  .phone-account {
+    display: block;
+  }
+  .phone-account h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 10rem;
+  }
+  .phone-account h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 3rem;
+    margin-right: 6rem;
+    color: #adada1;
+  }
+  .phone-account a {
+    color: #2e4f4f;
+    text-decoration: underline;
+  }
+  .phone-account a p {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-6 {
+    display: none;
+  }
+  .phone-account {
+    display: block;
+  }
+  .phone-account h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .phone-account h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 3rem;
+    max-width: 15rem;
+    margin-left: 6.5rem;
+    color: #adada1;
+  }
+  .phone-account a {
+    color: #2e4f4f;
+    text-decoration: underline;
+  }
+  .phone-account a p {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+.nav-link:hover {
+  color: grey;
 }
 
 /*# sourceMappingURL=style.css.map */

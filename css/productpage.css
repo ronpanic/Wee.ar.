@@ -44,6 +44,7 @@
 .list-container {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .list-wear {
@@ -78,6 +79,7 @@
 .list-wear h3 {
   font-size: 20px;
   color: #adada1;
+  margin-left: 3rem;
 }
 .list-wear h2 {
   margin-top: 1rem;
