@@ -141,6 +141,9 @@ ul li a button {
  
 @media screen and (max-width: 768px) {
  
+  .outfit-idea {
+    display: none;
+  }
 
   .wear {
   align-items: center;
@@ -236,6 +239,10 @@ ul li a button {
 
 
   @media screen and (max-width: 500px) {
+
+    .outfit-idea {
+      display: none;
+    }
 
     .nav-icons {
       display: none;
